@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple project in div tag</title>
+    <!-- Internal CSS -->
+    <style>
+        /* This is an internal CSS comment */
+        .box1 {
+            width: 200px;
+            height: 100px;
+            background-color: #FF5733;
+
+    /* styles.css (External CSS) */
+         .green-box {
+    background-color: green;
+    color: white;
+    padding: 10px;
+          }
+
+#purple-box {
+    background-color: purple;
+    color: white;
+    padding: 10px;
+}
+        }
+    </style>
+</head>
+<body>
+    <!-- Inline CSS -->
+    <div style="width: 300px; height: 150px; background-color: #33FF57;">
+        <p>This is an inline-styled div.</p>
+    </div>
+
+    <!-- Internal CSS -->
+    <div class="box1">
+        <p>This div is styled using internal CSS.</p>
+    </div>
+
+    <!-- External CSS -->
+    <div class="box2">
+        <p>This div is styled using external CSS.</p>
+    </div>
+    
+</body>
+</html>

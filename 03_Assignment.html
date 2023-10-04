@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Form</title>
+
+    <style>
+        /* Custom color palette for form elements */
+        :root {
+            --form-bg-color: #f2f2f2;
+            --input-bg-color: #ffffff;
+            --button-bg-color: #007bff;
+            --button-text-color: #ffffff;
+            --transparent-bg-color: rgba(255, 0, 0, 0.5); /* Red with 50% opacity */
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            background-color: var(--form-bg-color);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            background-color: var(--input-bg-color);
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: var(--button-bg-color);
+            color: var(--button-text-color);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Applying opacity to a form section */
+        .opacity-section {
+            background-color: var(--transparent-bg-color);
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1>Styled Form</h1>
+        
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
+        
+        <button type="submit">Submit</button>
+
+        <div class="opacity-section">
+            <p>This is a section with opacity applied.</p>
+            <p>It has a red background color with 50% opacity.</p>
+        </div>
+    </form>
+</body>
+</html>
